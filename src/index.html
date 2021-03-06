@@ -1,41 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+	<head>
+		<meta charset="utf-8" />
+		<title>Badža Flex (with Grid)</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="" />
+		<meta property="og:type" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="apple-touch-icon" href="icon.png" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="style-bflex.css" />
+		<meta name="theme-color" content="#fafafa" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="page-container">
+			<header>
+				<h1>
+					Badža Flex<small>by using CSS Grid <i>(and not Flexbox)</i></small>
+				</h1>
+			</header>
+			<main>
+				<div class="bflex">
+					<div class="bflex-item size-large">
+						<p>Large <small>1</small></p>
+					</div>
+					<div class="bflex-item size-medium">
+						<p>Medium <small>1</small></p>
+					</div>
+					<div class="bflex-item size-medium">
+						<p>Medium <small>2</small></p>
+					</div>
+					<div class="bflex-item size-medium">
+						<p>Medium <small>3</small></p>
+					</div>
+					<div class="bflex-item size-medium">
+						<p>Medium <small>4</small></p>
+					</div>
+					<div class="bflex-item size-medium">
+						<p>Medium <small>5</small></p>
+					</div>
+					<div class="bflex-item size-mini">
+						<div class="bflex-item size-micro">
+							<p>Micro <small>1</small></p>
+						</div>
+						<div class="bflex-item size-micro">
+							<p>Micro <small>2</small></p>
+						</div>
+						<div class="bflex-item size-micro">
+							<p>Micro <small>3</small></p>
+						</div>
+						<div class="bflex-item size-micro">
+							<p>Micro <small>4</small></p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer>Copyright &copy; 2021 Auxburgo</footer>
+		</div>
+	</body>
 </html>

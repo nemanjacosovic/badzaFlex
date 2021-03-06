@@ -1,0 +1,101 @@
+/* Using simple CSS instead of SCSS or SASS */
+.bflex {
+	width: 100%;
+	flex-wrap: wrap;
+	display: inline-flex;
+	align-content: flex-start;
+}
+
+.bflex-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.bflex-item.size-large {
+	height: 384px;
+	flex-basis: 384px;
+	background: #f45b69;
+}
+
+.bflex-item.breakaway {
+	flex: 3;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.bflex-item.size-medium {
+	height: 192px;
+	flex-basis: 192px;
+	background: #446990;
+}
+
+.bflex-item.size-mini {
+	display: flex;
+	flex-wrap: wrap;
+	height: 192px;
+	flex-basis: 192px;
+	background: #deb841;
+}
+
+.bflex-item.size-micro {
+	height: 96px;
+	flex-basis: 96px;
+	background: #028090;
+}
+
+@media only screen and (min-width: 768px) {
+	.bflex-item.breakaway {
+	}
+}
+
+/* Styling - Non crucial */
+header h1 {
+	font-weight: normal;
+}
+
+header h1 small {
+	font-size: 50%;
+	display: block;
+}
+
+header h1 small i {
+	font-size: 75%;
+	vertical-align: super;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+p small {
+	width: 26px;
+	height: 26px;
+	font-size: 75%;
+	line-height: 26px;
+	margin: 5px auto 0 auto;
+	display: block;
+	border-radius: 5px;
+	color: rgba(255, 255, 255, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.bflex-item.size-medium p {
+	font-size: 20px;
+}
+
+.bflex-item.size-micro p {
+	font-size: 16px;
+}
+
+footer {
+	font-size: 12px;
+	margin-top: 30px;
+	text-align: center;
+}
